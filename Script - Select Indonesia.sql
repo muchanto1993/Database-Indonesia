@@ -1,6 +1,5 @@
 select * from t_province;
 
---t_post
 select * from t_province_detail order by id asc;
 
 select distinct(city) from t_province_detail order by city asc;
