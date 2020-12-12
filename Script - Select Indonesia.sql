@@ -1,4 +1,4 @@
-select * from t_province;
+select * from t_province order by province_code asc;
 
 select * from t_province_detail order by id asc;
 
