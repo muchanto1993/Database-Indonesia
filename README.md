@@ -1,5 +1,5 @@
 # Database Wilayah Indonesia
-Ini adalah database wilayah indonesia. \n
+Ini adalah database wilayah indonesia. <br>
 Terdiri dari provinsi, kota, kecamatan, kelurahan dan kode pos.
 
 # Provinsi Indonesia
