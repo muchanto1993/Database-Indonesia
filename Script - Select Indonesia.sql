@@ -1,5 +1,14 @@
 select * from t_province order by province_code ;
-select * from t_province_detail order by id asc;
+select * from t_province_detail 
+--where id in ('25326', '106555') 
+order by id asc;
+
+truncate t_province;
+truncate t_province_detail;
+
+drop table t_province;
+drop table t_province_detail;
+
 
 select count(*) from t_province;
 select count(*) from t_province_detail;
@@ -21,8 +30,10 @@ order by prov.province_code asc;
 select sub_district from t_province_detail where city = 'BANDUNG' order by id asc;
 select urban from t_province_detail where sub_district = 'KIARACONDONG' order by id asc;
 
-select prov.province_code, prov.province_name, prov.province_name_en,
-	dtl.city, dtl.sub_district, dtl.urban, dtl.postal_code
+select 
+--	prov.province_code, prov.province_name, prov.province_name_en,
+--	dtl.city, dtl.sub_district, dtl.urban, dtl.postal_code
+	*
 from t_province_detail dtl
   join t_province prov on dtl.province_code = prov.province_code 
 where dtl.postal_code = '40283';
